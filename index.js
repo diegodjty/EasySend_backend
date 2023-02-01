@@ -17,7 +17,7 @@ db();
 const corsOptions = {
   origin: process.env.CLIENT_URL,
 };
-app.use(cors(corsOptions));
+app.use(cors());
 
 // App port
 const port = process.env.PORT || 4000;
