@@ -83,7 +83,7 @@ const hasPassword = async (req, res, next) => {
   }
 
   if (link.password) {
-    return res.json({ password: true, link: link.url });
+    return res.json({ password: true, link: link.url, file: link.name });
   }
   next();
 };
